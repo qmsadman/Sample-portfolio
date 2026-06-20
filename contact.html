@@ -26,30 +26,52 @@
     <main class="container">
         <h2 class="section-title">Contact</h2>
 
-        <div class="simple-card" style="max-width: 600px;">
-            <h3>Get In Touch</h3>
-            <p style="margin-bottom: 20px; color: #555555;">
-                Feel free to contact me for any professional opportunities, collaborations, or discussions about technology.
-            </p>
-            
-            <ul class="contact-list">
-                <li style="margin-bottom: 15px;">
-                    <strong>Phone Number:</strong><br>
-                    +880 1841 803658
-                </li>
-                <li style="margin-bottom: 15px;">
-                    <strong>Email Address:</strong><br>
-                    qm.sadman@gmail.com
-                </li>
-                <li style="margin-bottom: 15px;">
-                    <strong>Location:</strong><br>
-                    Mirpur 6, Dhaka, Bangladesh
-                </li>
-                <li>
-                    <strong>LinkedIn:</strong><br>
-                    <a href="https://www.linkedin.com/in/quazi-md-sadman-2aaba1235/" target="_blank">linkedin.com/in/quazi-md-sadman-2aaba1235/</a>
-                </li>
-            </ul>
+        <div class="contact-grid">
+            <div class="simple-card">
+                <h3>Get In Touch</h3>
+                <p class="text-gap muted-text">
+                    Feel free to contact me for professional opportunities, collaborations, or discussions about technology.
+                </p>
+
+                <ul class="contact-list contact-details">
+                    <li>
+                        <strong>Phone Number:</strong><br>
+                        <a href="tel:+8801841803658">+880 1841 803658</a>
+                    </li>
+                    <li>
+                        <strong>Email Address:</strong><br>
+                        <a href="mailto:qm.sadman@gmail.com">qm.sadman@gmail.com</a>
+                    </li>
+                    <li>
+                        <strong>Location:</strong><br>
+                        Mirpur 6, Dhaka, Bangladesh
+                    </li>
+                    <li>
+                        <strong>LinkedIn:</strong><br>
+                        <a href="https://www.linkedin.com/in/quazi-md-sadman-2aaba1235/" target="_blank" rel="noopener">linkedin.com/in/quazi-md-sadman-2aaba1235/</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="simple-card">
+                <h3>Send a Message</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input class="form-control" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" required></textarea>
+                    </div>
+                    <button class="btn" type="submit">Send Message</button>
+                    <p id="form-feedback" class="form-feedback"></p>
+                </form>
+            </div>
         </div>
     </main>
 

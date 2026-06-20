@@ -29,8 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Get user inputs
             const nameInput = document.getElementById('name');
-            const emailInput = document.getElementById('email');
-
             // Show confirmation message
             formFeedback.textContent = "Thank you, " + nameInput.value + "! Your message has been sent successfully.";
             formFeedback.style.display = "block";
